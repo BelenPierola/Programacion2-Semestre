@@ -1,0 +1,42 @@
+// raiz cuadradra.cpp : Defines the entry point for the console application.
+//Nombre:Belen Pierola Arias
+//Fecha:05/09/2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+int main()
+
+
+{
+
+float a,b,c,d,x1,x2;
+
+	cout<< "Ingrese el valor de a:    ";
+	cin>> a;
+	cout<< "Ingrese el valor de b:    ";
+	cin>> b;
+	cout<< "Ingrese el valor de c:    ";
+	cin>> c;
+
+	d=pow(b,2)-(4*a*c); 
+
+	if (d>0)
+	{ 
+	x1=(-b+sqrt(d))/(2*a);
+    x2=(-b-sqrt(d))/(2*a);
+
+	 cout<<"x1= "<<x1;
+	 cout<<"x2= "<<x2;
+	} 
+	else
+
+	    cout<< "No son numeros reales";
+
+
+  getch();
+  return 0;
+}
