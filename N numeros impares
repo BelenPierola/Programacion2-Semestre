@@ -1,0 +1,44 @@
+// N impares.cpp : Defines the entry point for the console application.
+//Autor: Belen Pierola Arias
+//Fecha:18/09/2014
+
+/*
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+
+{
+ int N,I;
+ cout<<"Ingrese el numero:  ";
+ cin>>N;
+ for(I=1;I<=N;I=I+1)
+	 cout<<(I*2)-1<<"\n";
+     
+ getch();
+
+}
+*/
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+
+{
+ int N,I;
+ cout<<"Ingrese el numero:  ";
+ cin>>N;
+ I=1;
+ while(I<=N)
+ {
+	 cout<<(I*2)-1<<"\n";
+     I=I+1;
+ }
+
+ getch();
+
+}
