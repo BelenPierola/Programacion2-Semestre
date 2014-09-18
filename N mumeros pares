@@ -1,0 +1,43 @@
+// N pares.cpp : Defines the entry point for the console application.
+//Autor: Belen Pierola Arias
+//Fecha:18/09/2014
+/*
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+
+{
+ int N,I;
+ cout<<"Ingrese el numero:  ";
+ cin>>N;
+ for(I=2;I<=N;I=I+2)
+	 cout<<I;
+     
+ getch();
+
+}
+*/
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+
+{
+ int N,I;
+ cout<<"Ingrese el numero:  ";
+ cin>>N;
+ I=2;
+ while(I<=N)
+ {
+	 cout<<I;
+     I=I+2;
+ }
+ getch();
+
+}
