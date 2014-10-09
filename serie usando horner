@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+ 
+using namespace std;
+void main()
+
+{
+float n,x,s=0,i;
+cout<<"Ingrese n:  ";
+cin>>n;
+cout<<"Ingrese x:  ";
+cin>>x;
+ 
+for(i=1;i<=n;i++)
+ s=pow(x,i)+s;
+cout<<"la suma es:  "<<s;
+
+getch();
+}
