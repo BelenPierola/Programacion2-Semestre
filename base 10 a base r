@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+
+{
+float d,s,c;
+int n,r;
+
+cout<<"Ingrese numero:  ";
+cin>>n;
+cout<<"Ingrese r:  ";
+cin>>r;
+
+c=0;
+s=0;
+
+
+while(n!=0)
+  {
+   d=n%r;
+   n=n/r;
+   s=s+(d*pow(10,c));
+   c=c+1;
+  }
+cout<<"La base es:  "<<s;
+getch();
+}
