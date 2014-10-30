@@ -1,0 +1,82 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+#include "stdlib.h"
+
+using namespace std;
+
+int serie(int n);
+float calcular(float base, float altura);
+float circulo(float r);
+
+void main()
+{
+  int n,i,suma,opcion;
+  float area,base,altura,area2,r;
+  do
+  {
+	  cout<<"\t Menu \n\n";
+      cout<<"1.Serie\n";
+      cout<<"2.Area de triangulo\n";
+      cout<<"3.Area de circulo\n";
+	  cout<<"4.Salir\n";
+	  cout<<"Elegir una opcion: ";
+	  cin>>opcion;
+	  switch(opcion)
+	  {
+	  case 1: cout<<"Serie\n";
+			  {
+				  cout<<"Ingrese N: ";
+				  cin>>n;
+				  suma=serie(n);
+				  cout<<"La suma es: "<<suma;
+			  }
+			  getch(); break;
+	  case 2: cout<<"Area de triangulo\n";
+			  {
+				  cout<<"Ingrese base: ";
+				  cin>>base;
+				  cout<<"Ingrese altura: ";
+				  cin>>altura;
+				  area=calcular(base,altura);
+				  cout<<"El area del triangulo es: "<<area;
+			  }
+			  getch(); break;
+	  case 3: cout<<"Area de circulo\n";
+			  {
+				  cout<<"Ingrese radio: ";
+				  cin>>r;
+				  area2=circulo(r);
+				  cout<<"El area del circulo es: "<<area2;
+			  }
+			  getch(); break;
+	  case 4: cout<<"Salir\n";
+		      getch(); break;
+	  default: cout<<"Error\n";
+	  }
+	  getch();
+	  system("cls");
+  }
+  while(opcion!=4);
+  
+}
+int serie(int n)
+{int i,suma;
+suma=0;
+      for(i=1;i<=n;i++)
+		  suma=suma+2
+		  ;
+	  return suma;
+}
+float calcular(float base,float altura)
+{
+	float valora;
+	valora=(base*altura)/2;
+	return valora;
+}
+float circulo(float r)
+{float area2,pi=3.1416;
+      area2=pi*pow(r,2);
+	  return area2;
+}
